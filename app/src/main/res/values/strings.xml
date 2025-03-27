@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Волков Алексей 22исп4</string>
+    <string-array name="colors_array">
+        <item>Желтый</item>
+        <item>Зеленый</item>
+        <item>Синий</item>
+    </string-array>
+</resources>

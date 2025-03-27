@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFE4E1">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/developerInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Волков Алексей Олегович, 22ИСП4, 2025 г."
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:textColor="#4B0082"
+            android:background="#FFDAB9"/>
+
+        <Button
+            android:id="@+id/randomNumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сгенерировать число"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FF6347"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:id="@+id/randomNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:textColor="#008080"/>
+
+        <EditText
+            android:id="@+id/inputTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите текст"
+            android:textSize="14sp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/reverseTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Инвертировать текст"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#4682B4"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:id="@+id/reversedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:textColor="#8B0000"/>
+
+        <Button
+            android:id="@+id/startStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Старт"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#32CD32"
+            android:textColor="#191970"/>
+
+        <TextView
+            android:id="@+id/todoListTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Список дел"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textColor="#800080"/>
+
+        <CheckBox
+            android:id="@+id/shopTaskCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сходить в магазин"
+            android:textSize="14sp"
+            android:textColor="#2F4F4F"/>
+
+        <CheckBox
+            android:id="@+id/lunchTaskCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пообедать"
+            android:textSize="14sp"
+            android:textColor="#2F4F4F"/>
+
+        <CheckBox
+            android:id="@+id/bookTaskCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дочитать книгу"
+            android:textSize="14sp"
+            android:textColor="#2F4F4F"/>
+
+        <TextView
+            android:id="@+id/completedTaskTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#8B4513"/>
+
+        <TextView
+            android:id="@+id/orderTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваш заказ"
+            android:textSize="22sp"
+            android:textColor="#FF4500"/>
+
+        <TextView
+            android:id="@+id/breadTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Хлеб"
+            android:textSize="18sp"
+            android:textColor="#8B4513"/>
+
+        <RadioGroup
+            android:id="@+id/breadRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/whiteBreadRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Белый"
+                android:textColor="#000000"/>
+
+            <RadioButton
+                android:id="@+id/blackBreadRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Чёрный"
+                android:textColor="#000000"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/drinkTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Напиток"
+            android:textSize="18sp"
+            android:textColor="#8B4513"/>
+
+        <RadioGroup
+            android:id="@+id/drinkRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/teaRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Чай"
+                android:textColor="#000000"/>
+
+            <RadioButton
+                android:id="@+id/juiceRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сок"
+                android:textColor="#000000"/>
+
+            <RadioButton
+                android:id="@+id/waterRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Минеральная вода"
+                android:textColor="#000000"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/orderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отправить заказ"
+            android:backgroundTint="#FF4500"
+            android:textColor="#FFFFFF"/>
+
+        <Spinner
+            android:id="@+id/colorSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/colorLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Текст"
+            android:textSize="18sp"
+            android:textColor="#0000FF"/>
+    </LinearLayout>
+</ScrollView>
